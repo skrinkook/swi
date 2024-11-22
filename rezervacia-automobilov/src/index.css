@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --BACKGROUND-COLOR: rgb(27, 27, 27);
+  --LIGHT-BACKGROUND: rgb(40, 40, 40);
+  --BUTTONS: rgb(255, 255, 255);
+  --BUTTON-BACKGROUND: rgb(70, 70, 70);
+  --PHOTO-BACKGROUND: rgb(50, 50, 50);
+  --NAVBAR-BACKGROUND: rgb(40, 40, 40);
+  
+}
+
+body {
+  background-color: var(--BACKGROUND-COLOR);
+  padding-right: 5%;
+  padding-left: 5%;
+  font-family: sans-serif;
+}
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*  || NAVBAR */
+/*-----------------*/
+
+.navbar {
+  height: 105px;
+  width: 100%;
+  min-width: 700px;
+  background-color: var(--NAVBAR-BACKGROUND);
+  border-radius: 15px;
+  margin-top: 2.5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 2000px;
+}
+.nav-container {
+  height: 100px;
+  width: 65%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sub-container{
+  height: 75px;
+  min-width: 80px;
+  display: flex;
+  flex-direction: column;
+justify-content: space-between;
+  align-items: center;
+
+}
+.circle{
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  background-color: var(--BUTTON-BACKGROUND);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.circle-description{
+  font-size: 14px;
+  color: rgb(130, 130, 130);
+}
+.selected{
+  background-color: var(--BUTTONS);
+  opacity: 90%;
+  cursor: pointer;
+}
+.selectedtext{
+  color: var(--BUTTONS);
+  opacity: 90%;
+}
+.button-number{
+  color: var(--BUTTONS);
+  opacity: 80%;
+  font-weight: 500;
+}
+.selected-number{
+  color: var(--NAVBAR-BACKGROUND);
+}
+
+/*  || MAIN */
+/*-----------------*/
+
+main{
+  border: 2px solid white;
+  width: 100%;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  padding-right: 110px;
+  padding-left: 110px;
+  max-width: 2000px;
+}
+
+/*  || SUMMARY */
+/*-----------------*/
+.summary{
+  min-height: 500px;
+  width: 300px;
+  margin-right: 25px;
+}
+
+.summary-card{
+  height: 500px;
+  width: 100%;
+  background-color: var(--PHOTO-BACKGROUND);
+  border-radius: 20px;
+}
+.doted-line{
+    border: 2px double white;
+    opacity: 40%;
+    border-style: dashed hidden hidden hidden;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/*  || LISTING */
+/*-----------------*/
+
+.listing{
+  border: 2px solid red;
+  height: 800px;
+  width: 100%;
+  max-width: 900px;
+}
+
+.vehicle-card{
+  width: 100%;
+  height: 250px;
+  border: 1px solid green;
+  display: flex;
+}
+
+.photo-container{
+  height: 100%;
+  width: 300px;
+  border: 1px solid orange;
+  padding-bottom: 20px;
+}
+.car-photo{
+  border-radius: 15px;
+  height: 100%;
+  width: 100%;
+  background-color: rebeccapurple;
+
+}
+h1{
+  color: white;
+}
