@@ -4,16 +4,16 @@ function Summary() {
             <div className="summary-card">
                 <p className="sum-title-text">Zhrnutie</p>
                 <p className="sum-subtitle-text">Typ služby</p>
-                <p className="sum-data-text">Na hodinu</p>
+                <p className="sum-data-text">Rezervácia na deň</p>
                 <hr className="sum-hr"></hr>
                 <p className="sum-subtitle-text">Miesto vyzdvihnutia</p>
-                <p className="sum-data-text">Lorem Ipsum</p>
+                <p className="sum-data-text">x</p>
                 <hr className="sum-hr"></hr>
-                <p className="sum-subtitle-text">Miesto odovzdania vozidla</p>
-                <p className="sum-data-text">Lorem ipsum</p>
+                <p className="sum-subtitle-text">Vozidlo</p>
+                <p className="sum-data-text">x</p>
                 <hr className="sum-hr"></hr>
                 <p className="sum-subtitle-text">Čas rezervácie</p>
-                <p className="sum-data-text">22:00</p>
+                <p className="sum-data-text">x</p>
                 <hr className="sum-hr"></hr>
                 <p className="sum-subtitle-text">Maximálna vzdialenosť</p>
                 <p className="sum-data-text">250km / deň</p>
@@ -21,7 +21,7 @@ function Summary() {
             <hr className="line"></hr>
             <div className="total-container">
                 <p className="total">Spolu</p>
-                <p className="price">789,00 €</p>
+                <p className="price">0,00 €</p>
             </div>                                          
         </section>
     )

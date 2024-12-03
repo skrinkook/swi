@@ -198,8 +198,22 @@ p.total, p.price {
   border-radius: 15px;
   height: 100%;
   width: 100%;
-  background-color: var(--PHOTO-BACKGROUND);
+  /* background-color: var(--PHOTO-BACKGROUND); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 
+}
+#first{
+  background-image: url("https://media.ed.edmunds-media.com/audi/s5/2022/oem/2022_audi_s5_convertible_prestige_fq_oem_1_1600.jpg");
+}
+#second{
+  background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0nXhVlre4zw64ieeRp5kCh0vTB7pdYX4g-h6M4ABWaHRMHNvFyo8ovuwFJ7UaQaiHfY5tdcUGxkpXCh0ttxjjYGf39G0Bvvxau66TQ4ZKfU6mlEvmo_1c3Mt19_oZzWtuoUYKQ_eYKK3t8JHY0m0THUHZkIyCRZYpi7q6DeSnbHNRkVKThaFefVbjog/s1600/damaged-vw-golf-af69ngv.jpg");
+  background-size: contain;
+}
+#third{
+  background-image: url("https://www.autoinak.sk/wp-content/uploads/2021/09/2022-Cadillac-CT5-V-Blackwing-004-750x375.jpg");
+  
 }
 h1{
   color: white;
