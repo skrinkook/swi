@@ -11,22 +11,22 @@ function Navbar(){
                     <p className="circle-description">Typ Služby</p>
                 </div> */}
                 <div className="sub-container">
-                    <div className="circle selected">
+                    <div className="circle selected" id="numberone">
                         <h2 className="button-number selected-number">1</h2>
                     </div>
                     <p className="circle-description selectedtext">Výber vozidla</p>
                 </div>
                 <div className="sub-container">
-                <div className="circle">
-                    <h2 className="button-number">2</h2>   
+                <div className="circle" id="circle2">
+                    <h2 className="button-number" id="button-number2">2</h2>   
                         </div>
-                        <p className="circle-description">Kontatné údaje</p>
+                        <p className="circle-description" id="circle-description2">Kontatné údaje</p>
                 </div>
                 <div className="sub-container">
-                <div className="circle">
-                <h2 className="button-number">3</h2>
+                <div className="circle" id="circle3">
+                <h2 className="button-number" id="button-number3">3</h2>
                         </div>
-                        <p className="circle-description">Potvrdenie a platba</p>
+                        <p className="circle-description" id="circle-description3">Potvrdenie a platba</p>
                 </div>
             </div>
         </nav>

@@ -10,7 +10,7 @@ function Summary() {
                 <p className="sum-data-text">x</p>
                 <hr className="sum-hr"></hr>
                 <p className="sum-subtitle-text">Vozidlo</p>
-                <p className="sum-data-text">x</p>
+                <p className="sum-data-text sdtv">x</p>
                 <hr className="sum-hr"></hr>
                 <p className="sum-subtitle-text">Čas rezervácie</p>
                 <p className="sum-data-text">x</p>

@@ -1,5 +1,27 @@
+import ContactForm from "./ContactForm";
+
 function Listing(){
+    function nextPage(carNumber){
+        document.querySelector('.listing').style.display = 'none';
+        document.querySelector('.circle').classList.remove('selected');
+        document.querySelector('.button-number').classList.remove('selected-number');
+        document.querySelector('.circle-description').classList.remove('selectedtext');
+        document.querySelector('.button-number').style.display = 'none';
+        document.getElementById('numberone').innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>';
+        
+        document.getElementById('circle2').classList.add("selected");
+        document.getElementById('button-number2').classList.add("selected-number");
+        document.getElementById('circle-description2').classList.add('selectedtext');
+        document.querySelector('.footer').style.display = 'none';
+        document.querySelector('.sdtv').textContent =  carNumber;
+        document.querySelector('.contactForm').style.display = 'flex';
+
+
+        console.log(carNumber)
+    }
+
     return(
+        <>
         <section className="listing">
             <div className="vehicle-card">
                 <div className="photo-container">
@@ -10,7 +32,7 @@ function Listing(){
                     <div className="wrap-start">
                         <div className="top-row">
                             <h1 className="carName">Audi S5 Cabriolet</h1>
-                            <button className="carSelect">Vybrať</button>
+                            <button className="carSelect" onClick={() => nextPage("Audi S5 Cabriolet")}>Vybrať</button>
                         </div>
                             <div className="middle-row">
                                 <h1 className="carPrice">210,00 €</h1>
@@ -40,7 +62,7 @@ function Listing(){
                     <div className="wrap-start">
                         <div className="top-row">
                             <h1 className="carName">Volkswagen Golf IV</h1>
-                            <button className="carSelect">Vybrať</button>
+                            <button className="carSelect" onClick={() => nextPage('Volkswagen Golf IV')}>Vybrať</button>
                         </div>
                             <div className="middle-row">
                                 <h1 className="carPrice">14,99 €</h1>
@@ -70,7 +92,7 @@ function Listing(){
                     <div className="wrap-start">
                         <div className="top-row">
                             <h1 className="carName">Cadillac CT5</h1>
-                            <button className="carSelect">Vybrať</button>
+                            <button className="carSelect" onClick={() => nextPage('Cadillac CT5')}>Vybrať</button>
                         </div>
                             <div className="middle-row">
                                 <h1 className="carPrice">179,00 €</h1>
@@ -95,6 +117,8 @@ function Listing(){
 
 
         </section>
+        <ContactForm />
+        </>
     )
 }
 
