@@ -341,7 +341,7 @@ footer{
   align-items: center;
 }
 
-.contactForm h1{
+.contactForm h1, .paymentForm h1{
   text-align: center;
   letter-spacing: 2px;
   margin-bottom: 20px;
@@ -366,3 +366,42 @@ footer{
 /*  || PAYMENT */
 /*-----------------*/
 
+.paymentForm {
+  display: none;
+
+  flex-direction: column;
+
+  align-items: center;
+  margin-top: 20px;
+}
+
+.tac{
+  color: white;
+  margin-left: 10px;
+  font-size: 13px;
+}
+
+.paymentConfirmation{
+  height: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 20px;
+
+}
+
+/*  || CONFIRMATION BANNER */
+/*-----------------*/
+
+.confirmationBanner{
+  background-color: green;
+  height: 80px;
+
+  position: absolute;
+  right: 20px;
+  border-radius: 15px;
+  top: 10px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  color: white;
+}

@@ -13,11 +13,15 @@ function ContactForm(){
         document.getElementById('circle-description2').classList.remove('selectedtext');
         document.getElementById('circle2').innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>';
 
+        document.querySelector('.pickupplace').textContent = 'Bratislava'
+        document.querySelector('.reservationtime').textContent = '25.12.2024 - 25.12.2024';
+x
     }
 
     function handleSubmit(event) {
         event.preventDefault();
         nextPage3();
+        document.querySelector('.paymentForm').style.display = 'flex';
     }
 
     function handleChange(){

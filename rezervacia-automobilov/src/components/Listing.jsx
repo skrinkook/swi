@@ -1,7 +1,8 @@
 import ContactForm from "./ContactForm";
+import Payment from "./Payment";
 
 function Listing(){
-    function nextPage(carNumber){
+    function nextPage(carNumber, carPrice){
         document.querySelector('.listing').style.display = 'none';
         document.querySelector('.circle').classList.remove('selected');
         document.querySelector('.button-number').classList.remove('selected-number');
@@ -14,6 +15,7 @@ function Listing(){
         document.getElementById('circle-description2').classList.add('selectedtext');
         document.querySelector('.footer').style.display = 'none';
         document.querySelector('.sdtv').textContent =  carNumber;
+        document.querySelector('.price').textContent = carPrice;
         document.querySelector('.contactForm').style.display = 'flex';
 
 
@@ -32,7 +34,7 @@ function Listing(){
                     <div className="wrap-start">
                         <div className="top-row">
                             <h1 className="carName">Audi S5 Cabriolet</h1>
-                            <button className="carSelect" onClick={() => nextPage("Audi S5 Cabriolet")}>Vybrať</button>
+                            <button className="carSelect" onClick={() => nextPage("Audi S5 Cabriolet", "210,00 €")}>Vybrať</button>
                         </div>
                             <div className="middle-row">
                                 <h1 className="carPrice">210,00 €</h1>
@@ -62,7 +64,7 @@ function Listing(){
                     <div className="wrap-start">
                         <div className="top-row">
                             <h1 className="carName">Volkswagen Golf IV</h1>
-                            <button className="carSelect" onClick={() => nextPage('Volkswagen Golf IV')}>Vybrať</button>
+                            <button className="carSelect" onClick={() => nextPage('Volkswagen Golf IV', "14,99 €")}>Vybrať</button>
                         </div>
                             <div className="middle-row">
                                 <h1 className="carPrice">14,99 €</h1>
@@ -92,7 +94,7 @@ function Listing(){
                     <div className="wrap-start">
                         <div className="top-row">
                             <h1 className="carName">Cadillac CT5</h1>
-                            <button className="carSelect" onClick={() => nextPage('Cadillac CT5')}>Vybrať</button>
+                            <button className="carSelect" onClick={() => nextPage('Cadillac CT5', "179,00 €")}>Vybrať</button>
                         </div>
                             <div className="middle-row">
                                 <h1 className="carPrice">179,00 €</h1>

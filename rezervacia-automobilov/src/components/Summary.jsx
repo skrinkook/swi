@@ -7,13 +7,13 @@ function Summary() {
                 <p className="sum-data-text">Rezervácia na deň</p>
                 <hr className="sum-hr"></hr>
                 <p className="sum-subtitle-text">Miesto vyzdvihnutia</p>
-                <p className="sum-data-text">x</p>
+                <p className="sum-data-text pickupplace">&nbsp;</p>
                 <hr className="sum-hr"></hr>
                 <p className="sum-subtitle-text">Vozidlo</p>
-                <p className="sum-data-text sdtv">x</p>
+                <p className="sum-data-text sdtv">&nbsp;</p>
                 <hr className="sum-hr"></hr>
                 <p className="sum-subtitle-text">Čas rezervácie</p>
-                <p className="sum-data-text">x</p>
+                <p className="sum-data-text reservationtime">&nbsp;</p>
                 <hr className="sum-hr"></hr>
                 <p className="sum-subtitle-text">Maximálna vzdialenosť</p>
                 <p className="sum-data-text">250km / deň</p>

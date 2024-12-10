@@ -1,6 +1,7 @@
 import Summary from "./Summary"
 import Listing from "./Listing"
 import Footer from "./footer"
+import Payment from "./Payment"
 
 function Main(){
     
@@ -11,6 +12,8 @@ function Main(){
                 <Listing />
             </main>
                 <Footer />
+                <Payment />
+                
         </section>
     )
 }
